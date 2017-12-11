@@ -1,0 +1,42 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Sign up</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="no-scroll" >
+
+<ion-card class="card">
+<ion-list class="list">
+
+  <ion-item>
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="username" id="username" (input)="resetColor('username')"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password1" id="password1" (input)="resetColor('password1')"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label floating>Repeat Password</ion-label>
+      <ion-input type="password" [(ngModel)]="password2" id="password2" (input)="resetColor('password2')"></ion-input>
+  </ion-item>
+
+  <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="email" id="email" (input)="resetColor('email')"></ion-input>
+  </ion-item>
+
+
+</ion-list>
+
+<div padding>
+  <button ion-button block class="signIn" color="signUp" (click)="signUp()">Sign Up</button>
+</div>
+
+</ion-card>
+</ion-content>

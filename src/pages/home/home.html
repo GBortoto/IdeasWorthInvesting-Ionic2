@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Search</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="ideasContent">
+
+<ion-searchbar class="searchBar"></ion-searchbar>
+
+<ion-list no-lines class="ideasList">
+
+  <ion-item *ngFor="let idea of ideas" class="ideasItem">
+    <ion-card class="ideaCard" text-center>
+
+      <ion-card-header class="ideaCard-header">
+        <ion-icon name="bulb" color="secondary" class="ideaIcon"></ion-icon>
+          {{idea.name}}
+      </ion-card-header>
+
+      <div class="ideaCard-text" text-justify>
+        <p text-wrap style="color:primary;">
+          {{idea.content}}
+        </p>
+      </div>
+      
+
+    </ion-card>
+  </ion-item>
+
+</ion-list>
+
+</ion-content>

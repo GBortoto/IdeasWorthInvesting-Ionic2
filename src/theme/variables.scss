@@ -1,0 +1,173 @@
+// Ionic Variables and Theming. For more info, please see:
+// http://ionicframework.com/docs/theming/
+
+// Font path is used to include ionicons,
+// roboto, and noto sans fonts
+$font-path: "../assets/fonts";
+
+
+// The app direction is used to include
+// rtl styles in your app. For more info, please see:
+// http://ionicframework.com/docs/theming/rtl-support/
+$app-direction: ltr;
+
+
+@import "ionic.globals";
+
+
+// Shared Variables
+// --------------------------------------------------
+// To customize the look and feel of this app, you can override
+// the Sass variables found in Ionic's source scss files.
+// To view all the possible Ionic variables, see:
+// http://ionicframework.com/docs/theming/overriding-ionic-variables/
+
+
+
+
+// Named Color Variables
+// --------------------------------------------------
+// Named colors makes it easy to reuse colors on various components.
+// It's highly recommended to change the default colors
+// to match your app's branding. Ionic uses a Sass map of
+// colors so you can add, rename and remove colors as needed.
+// The "primary" color is the only required color in the map.
+
+$colors: (
+  primary:    #e29c23,
+  secondary:  #ed4d0f,
+
+  light:      #ffd960,
+  white:      #ffffff,
+  ionicWhite: #f8f8f8,
+
+  lightYellow:#ffffd3,
+
+  lightDark:  #d9d9d9,
+
+  toolbar:    #e27423,
+
+  r1c1:       #ebc137,
+  r1c2:       #e38c2d,
+  r1c3:       #db4c2c,
+  r1c4:       #771e10,
+  r1c5:       #48110c,
+
+  r2c1:       #e29c23,
+  r2c2:       #e87f1a,
+  r2c3:       #ef5d13,
+  r2c4:       #ed4d0f,
+  r2c5:       #ea3911,
+
+  r3c1:       #cf6615,
+  r3c2:       #c04e10,
+  r3c3:       #b1370c,
+  r3c4:       #a22008,
+  r3c5:       #930803,
+
+  r4c1:       #ffd960,
+  r4c2:       #f9a83c,
+  r4c3:       #dd7a37,
+  r4c4:       #ad3a1b,
+  r4c5:       #690600,
+
+  signIn: (
+    base: #e29c23,
+    contrast: #ffffff
+  ),
+  signUp: (
+    base: #ed4d0f,
+    contrast: #ffffff
+  )
+);
+
+$toolbar-background: color($colors, toolbar);
+
+// App iOS Variables
+// --------------------------------------------------
+// iOS only Sass variables can go here
+
+
+
+
+// App Material Design Variables
+// --------------------------------------------------
+// Material Design only Sass variables can go here
+
+
+
+
+// App Windows Variables
+// --------------------------------------------------
+// Windows only Sass variables can go here
+
+
+
+
+// App Theme
+// --------------------------------------------------
+// Ionic apps can have different themes applied, which can
+// then be future customized. This import comes last
+// so that the above variables are used and Ionic's
+// default are overridden.
+
+@import "ionic.theme.default";
+
+
+// Ionicons
+// --------------------------------------------------
+// The premium icon font for Ionic. For more info, please see:
+// http://ionicframework.com/docs/ionicons/
+
+@import "ionic.ionicons";
+
+
+// Fonts
+// --------------------------------------------------
+
+@import "roboto";
+@import "noto-sans";
+
+@font-face {
+  font-family: 'BloggerSans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/BloggerSans/BloggerSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'BloggerSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/BloggerSans/BloggerSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'BloggerSans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/BloggerSans/BloggerSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../assets/fonts/OpenSans/OpenSans-Light.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/OpenSans/OpenSans-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../assets/fonts/OpenSans/OpenSans-Bold.ttf');
+}
+
+$font-family-base: "OpenSans";

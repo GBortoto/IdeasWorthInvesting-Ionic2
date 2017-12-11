@@ -1,0 +1,8 @@
+{
+  "name": "IdeasWorthInvesting",
+  "app_id": "4edaed22",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

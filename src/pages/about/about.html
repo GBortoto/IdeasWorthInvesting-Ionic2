@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      {{currentIdea.name}}
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+<ion-segment [(ngModel)]="threadsOptions">
+    <ion-segment-button value="Discussions">
+      Discussions
+    </ion-segment-button>
+    <ion-segment-button value="Members">
+      Members
+    </ion-segment-button>
+</ion-segment>
+
+<div [ngSwitch]="threadsOptions">
+  <ion-list *ngSwitchCase="'Discussions'">
+    <ion-item *ngFor="let thread of threads">{{thread}}</ion-item>
+  </ion-list>
+    <ion-list *ngSwitchCase="'Members'">
+      <ion-item>
+        <p>{{ current }}</p>
+      </ion-item>
+    </ion-list>
+</div>
+</ion-content>

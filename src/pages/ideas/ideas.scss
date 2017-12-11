@@ -1,0 +1,140 @@
+page-ideas {
+	padding: 0 !important;
+	margin: 0 !important;
+
+	
+	.ideasContent{
+		background-color: color($colors, primary);
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+	
+
+	// Ideas - "Page"
+
+	.ideasPage{
+		background-color: color($colors, primary);
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	.ideasList{
+		padding: 0 !important;
+		//width: 100%;
+		margin: 2px;
+	}
+
+	.ideasItem{
+		background-color: color($colors, primary);
+		height: 135px;
+		
+	}
+
+	.ideasCard {
+	   background-color: color($colors, ionicWhite);
+	   //border-color: color($colors, primary);
+	   height: 125px;
+	   padding: 5px;
+	}
+
+	.ideasCard-header {
+		text-align: left;
+		font-size: 20px;
+		width: 100%;
+		padding: 5px;
+	}
+
+	.ideasIcon{
+		margin-top: 1px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.ideasCard-text {
+		margin-top: 5px;
+		margin-bottom: 10px;
+		text-align: left;
+		font-size: 16px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	// Search - "Page"
+
+	.searchPage{
+		background-color: color($colors, secondary);
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	.searchList{
+		padding: 0 !important;
+		//width: 100%;
+		margin: 2px;
+	}
+
+	.searchItem{
+		background-color: color($colors, secondary);
+		height: 135px;
+		
+	}
+
+	.searchCard {
+	   background-color: color($colors, ionicWhite);
+	   //border-color: color($colors, primary);
+	   height: 125px;
+	}
+
+	.searchCard-header {
+		text-align: left;
+		font-size: 20px;
+		width: 100%;
+		padding: 5px;
+	}
+
+	.searchIcon{
+		margin-top: 1px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.searchCard-text {
+		margin-top: 5px;
+		margin-bottom: 10px;
+		text-align: left;
+		font-size: 16px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+
+
+
+
+
+
+
+
+
+	// Notifications - "Page"
+
+	.notificationsPage{
+		background-color: color($colors, white);
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+}

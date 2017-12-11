@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      My Ideas
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-footer>
+  <ion-toolbar color="ionicWhite">
+    <ion-segment [(ngModel)]="tabs" color="secondary">
+      <ion-segment-button value="search">
+        <ion-icon name="search"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="ideas">
+        <ion-icon name="bulb"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="notifications">
+        <ion-icon name="mail"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-footer>
+
+<ion-content class="ideasContent">
+
+ <ion-fab right bottom>
+    <button ion-fab color="secondary" (click)="addNewIdea()">
+      <ion-icon name="add"></ion-icon>
+    </button>
+    <!--
+    <ion-fab-list side="left">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  -->
+  </ion-fab>
+
+
+<!-- Tabs -->
+<div [ngSwitch]="tabs">
+
+  <!-- Search "page" -->
+  <div *ngSwitchCase="'search'" class="searchPage">
+
+    <ion-searchbar class="searchBar"></ion-searchbar>
+
+    <ion-list no-lines class="searchList">
+
+      <ion-item *ngFor="let idea of ideas" class="searchItem">
+        <ion-card class="searchCard" text-center>
+
+          <ion-card-header class="seachCard-header">
+            <ion-icon name="bulb" color="secondary" class="searchIcon"></ion-icon>
+              {{idea.name}}
+          </ion-card-header>
+
+          <div class="searchCard-text" text-justify>
+            <p text-wrap style="color:primary;">
+              {{idea.content}}
+            </p>
+          </div>
+        </ion-card>
+      </ion-item>
+
+    </ion-list>
+  </div>
+
+  <!-- Ideas "page" -->
+  <div *ngSwitchCase="'ideas'" class="ideasPage">
+
+  <ion-list no-lines class="ideasList">
+
+    <ion-item *ngFor="let idea of my_ideas" class="ideasItem">
+      <ion-card class="ideaCard" text-center (click)="goToIdea(idea)">
+        <ion-card-header class="ideaCard-header">
+          <ion-icon name="bulb" color="primary" class="ideaIcon"></ion-icon>
+            {{idea.idea.title}}
+        </ion-card-header>
+
+        <div class="ideaCard-text" text-justify>
+          <p text-wrap style="color:primary;">
+            {{idea.idea.description}}
+          </p>
+        </div>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+
+  </div>
+
+  
+  <!-- Notifications "page" -->
+  <div *ngSwitchCase="'notifications'" class="notificationsPage">
+
+  </div>
+
+</div>
+
+</ion-content>
